@@ -1,0 +1,50 @@
+<html>
+    <style>
+        /*Set to pixel style and resize as needed*/
+        #canvas {
+            image-rendering: optimizeSpeed;
+            image-rendering: -moz-crisp-edges;
+            image-rendering: -webkit-optimize-contrast;
+            image-rendering: optimize-contrast;
+            image-rendering: pixelated;
+            width: 1000px;
+            height: 700px;
+            border-color: grey;
+            border-style: solid;
+            border-width: 5px;
+            /*center*/
+            margin: auto;
+            display: block;
+            cursor: none;
+        }
+        .description {
+            text-align: center;
+            color: grey;
+            width: 1000px;
+            margin: auto;
+            margin-top: 20px;
+            display: block;
+        }
+        body {
+            overflow: hidden;
+        }
+    </style>
+    <body style="background-color: black;">
+        <canvas id="canvas" width="320" height="224"></canvas>
+        <div class="description">
+            <h1>ONE LOOK</h1>
+            <b>Controls:</b><br/> 
+            WASD or arrow keys.<br/>
+            [space] to go back to the menu.<br/><br/>
+            
+            <i>by Danegraphics</i><br/>
+            <i>for the GMTK GameJam 2019</i><br/><br/>
+            <i>Engine, assets, and code from scratch, just like grandma used to make.</i>
+        </div>
+    </body>
+    <!--load the engine and run the game code-->
+    <script src="game_engine.js"></script>
+    <script src="room.js"></script>
+    <script src="player.js"></script>
+    <script src="game_code.js"></script>
+</html>
